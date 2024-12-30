@@ -14,8 +14,9 @@ df = pd.DataFrame(data)
 
 @app.route('/')
 def home():
-    return redirect('/bklRohan')
-@app.route('/bklRohan')
+    return redirect('/movies')
+
+@app.route('/movies')
 def index():
     return render_template('Iyad.html')
 
